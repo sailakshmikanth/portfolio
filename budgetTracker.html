@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        h1 {
+            color: #222;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .images img {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .role {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #0056b3, #003d82);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .github-link {
+        color: #0366d6;
+        font-weight: bold;
+        text-decoration: none;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+            color: #024ea2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💰 Budget Tracker</h1>
+        <p>Track your expenses and savings with ease</p>
+    
+        <p class="description">
+            Budget Tracker is a simple yet powerful financial management tool that helps users monitor their income, 
+            expenses, and savings. Built with modern web technologies, it provides a seamless experience for tracking 
+            daily spending and budgeting efficiently.
+        </p>
+    
+        <h2>📸 Project Snapshots</h2>
+        <div class="images">
+            <img src="/images/BudgetTracker/1 (1).png" alt="Budget Tracker Image 1">
+            <img src="/images/BudgetTracker/2.png" alt="Budget Tracker Image 2">
+            <img src="/images/BudgetTracker/3.png" alt="Budget Tracker Image 3">
+            <img src="/images/BudgetTracker/4.png" alt="Budget Tracker Image 4">
+        </div>
+    
+        <h2 class="role">👨‍💻 My Role: Database, Chatbot & UI Designer</h2>
+        <p class="description">
+            In this project, I was responsible for handling the <span class="highlight">database design</span>, integrating an  
+            <span class="highlight">AI-powered chatbot</span>, and crafting an <span class="highlight">intuitive UI/UX</span>.  
+            I designed an efficient <span class="highlight">database structure</span> for managing financial records,  
+            implemented a <span class="highlight">smart chatbot assistant</span> for user queries,  
+            and created a <span class="highlight">modern, responsive design</span> with a <span class="highlight">dark & light mode</span>.
+        </p>
+    
+        <h2>🔗 GitHub Repository</h2>
+        <p class="description">
+            Explore the full source code on GitHub:  
+            <a href="https://github.com/sailakshmikanth/BudgetTracker" target="_blank" class="github-link">Budget Tracker Repository</a>
+        </p>
+    
+        <a href="Portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+    </div>
+    
+
+</body>
+</html>

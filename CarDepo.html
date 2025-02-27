@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eXcite Learn - Project Showcase</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        h1 {
+            color: #222;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #555;
+            margin: 20px 0;
+        }
+
+      
+            .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        max-width: 100%;
+        }
+
+        .images video {
+            width: 100%;
+            max-width: 800px; /* Adjust this as needed */
+            height: auto;
+            border-radius: 10px; /* Optional: Adds rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+        }
+        .images img {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .role {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #0056b3, #003d82);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .github-link {
+        color: #0366d6;
+        font-weight: bold;
+        text-decoration: none;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+            color: #024ea2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚗 CarMasters Depot - Ultimate Car Buying Experience</h1>
+    
+        <p class="description">
+            CarMasters Depot is an advanced online car marketplace offering all-brand cars at competitive prices with an 
+            unbeatable user experience. Users can explore detailed car information, view 360-degree images, access exclusive 
+            discounts, and purchase vehicles seamlessly.
+        </p>
+    
+        <h2>📸 Project Video</h2>
+        <div class="images">
+            <video src="images/carDepo/full video on cardepo.mp4" controls></video>
+        </div>
+    
+        <h2 class="role">👨‍💻 My Role: Full Stack Developer</h2>
+        <p class="description">
+            As a <span class="highlight">Full Stack Developer</span>, I built a powerful <span class="highlight">MERN Stack</span> application, 
+            integrating <span class="highlight">React.js</span> for the front end and <span class="highlight">Node.js, Express.js, and MongoDB</span> 
+            for the back end. I implemented a <span class="highlight">user-friendly UI</span>, <span class="highlight">secure authentication</span>, 
+            and an optimized <span class="highlight">database structure</span> to ensure a seamless experience. The platform features 
+            <span class="highlight">real-time car browsing</span>, <span class="highlight">payment gateway integration</span>, and 
+            <span class="highlight">dynamic filtering</span>.
+        </p>
+    
+        <h2>🔗 GitHub Repository</h2>
+        <p class="description">
+            Explore the full source code on GitHub:  
+            <a href="https://github.com/sailakshmikanth/car_masters_depo" target="_blank" class="github-link">CarMasters Depot Repository</a>
+        </p>
+    
+        <a href="Portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+    </div>
+    
+
+</body>
+</html>
