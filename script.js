@@ -26,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Select the header element
-const header = document.querySelector('.header'); // Change selector as per your header class
+const header = document.querySelector('.header'); 
 let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
@@ -54,7 +53,6 @@ header.addEventListener('mouseleave', () => {
 });
 
 
-/* Recent change */
 function openPage(pageUrl) {
     location.assign(pageUrl);
 }
