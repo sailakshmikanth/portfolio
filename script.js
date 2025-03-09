@@ -89,17 +89,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Disable Right-Click
-document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-// Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+U
-document.addEventListener("keydown", (event) => {
-    if (
-        event.key === "F12" || 
-        (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J")) || 
-        (event.ctrlKey && event.key === "U")
-    ) {
-        event.preventDefault();
-    }
-});
+
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+    document.addEventListener("keydown", (event) => {
+        if (
+            event.key === "F12" || 
+            (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J")) || 
+            (event.ctrlKey && event.key === "U")
+        ) {
+            event.preventDefault();
+        }
+    });
+
+    setInterval(() => {
+        (function() {
+            function devtoolsDetect() {
+                const threshold = 160;
+                let widthThreshold = window.outerWidth - window.innerWidth > threshold;
+                let heightThreshold = window.outerHeight - window.innerHeight > threshold;
+                if (widthThreshold || heightThreshold) {
+                    alert("Developer tools detected! Please close it.");
+                    window.location.reload();
+                }
+            }
+            devtoolsDetect();
+        })();
+    }, 1000);
+
 
 console.log('Script is working');

@@ -1,9 +1,9 @@
-'<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eXcite Learn - Project Showcase</title>
+    <title>CarMasterDepo</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -39,33 +39,20 @@
             margin: 20px 0;
         }
 
-      
-            .images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        max-width: 100%;
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            max-width: 100%;
         }
 
         .images video {
             width: 100%;
-            max-width: 800px; /* Adjust this as needed */
+            max-width: 800px;
             height: auto;
-            border-radius: 10px; /* Optional: Adds rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
-        }
-        .images img {
-            width: 250px;
-            height: 150px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .images img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .role {
@@ -99,34 +86,33 @@
         }
 
         .github-link {
-        color: #0366d6;
-        font-weight: bold;
-        text-decoration: none;
+            color: #0366d6;
+            font-weight: bold;
+            text-decoration: none;
         }
 
         .github-link:hover {
             text-decoration: underline;
             color: #024ea2;
         }
-
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>🚗 CarMasters Depot - Ultimate Car Buying Experience</h1>
-    
+
         <p class="description">
             CarMasters Depot is an advanced online car marketplace offering all-brand cars at competitive prices with an 
             unbeatable user experience. Users can explore detailed car information, view 360-degree images, access exclusive 
             discounts, and purchase vehicles seamlessly.
         </p>
-    
+
         <h2>📸 Project Video</h2>
         <div class="images">
             <video src="images/carDepo/full video on cardepo.mp4" controls></video>
         </div>
-    
+
         <h2 class="role">👨‍💻 My Role: Full Stack Developer</h2>
         <p class="description">
             As a <span class="highlight">Full Stack Developer</span>, I built a powerful <span class="highlight">MERN Stack</span> application, 
@@ -136,16 +122,44 @@
             <span class="highlight">real-time car browsing</span>, <span class="highlight">payment gateway integration</span>, and 
             <span class="highlight">dynamic filtering</span>.
         </p>
-    
+
         <h2>🔗 GitHub Repository</h2>
         <p class="description">
             Explore the full source code on GitHub:  
             <a href="https://github.com/sailakshmikanth/car_masters_depo" target="_blank" class="github-link">CarMasters Depot Repository</a>
         </p>
-    
+
         <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
     </div>
-    
+
+    <script>
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+        document.addEventListener("keydown", (event) => {
+            if (
+                event.key === "F12" || 
+                (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J")) || 
+                (event.ctrlKey && event.key === "U")
+            ) {
+                event.preventDefault();
+            }
+        });
+
+        setInterval(() => {
+            (function() {
+                function devtoolsDetect() {
+                    const threshold = 160;
+                    let widthThreshold = window.outerWidth - window.innerWidth > threshold;
+                    let heightThreshold = window.outerHeight - window.innerHeight > threshold;
+                    if (widthThreshold || heightThreshold) {
+                        alert("Developer tools detected! Please close it.");
+                        window.location.reload();
+                    }
+                }
+                devtoolsDetect();
+            })();
+        }, 1000);
+    </script>
 
 </body>
 </html>
